@@ -26,7 +26,7 @@ function checkPage() {
         window.location.href = "signin.html"
     }
     if(localStorage.getItem("checkPage") == "1") {
-        localStorage.setItem("checkPage", 0)
+        localStorage.setItem("checkPage", "")
     }
 }
 window.onload = checkPage
