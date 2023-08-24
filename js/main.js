@@ -20,13 +20,13 @@ var giftSong = document.getElementById("giftSong")
 var maiduyOuter = document.getElementById("maiduyOuter")
 var giftPresent = document.getElementById("giftPresent")
 var checkSignin = 0
-localStorage.setItem("checkPage", "")
+localStorage.setItem("checkPage", "hihi")
 function checkPage() {
     if (localStorage.getItem("checkPage") == "0") {
         window.location.href = "signin.html"
     }
     if(localStorage.getItem("checkPage") == "1") {
-        localStorage.setItem("checkPage", "")
+        localStorage.setItem("checkPage", "hihi")
     }
 }
 window.onload = checkPage
