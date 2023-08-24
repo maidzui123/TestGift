@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift4U</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="mainContainer" class="main-container">
+        <div id="instructorOuter" class="instructor-outer animate__animated animate__fadeInLeft">
+            <div class="instructor-main">
+                <img id="instructorImg" src="./images/instructor.png" alt="">
+            </div>
+            <div id="instructorSay" class="instructor-say animate__animated animate__backInLeft">
+                <img src="./images/say.png" alt="">
+                <p id="instructorSayDetail">Nhấn Next để kích hoạt tôi! Hoặc nhấn để nhận được sự hướng dẫn!</p>
+            </div>
+            <button id="btnInstructor" class="btn instructor-btn">Next</button>
+            <audio id="hpbdSong" class="hide" controls>
+                <source src="./musics/hpbdsong.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát audio.
+            </audio>
+            <audio id="giftSong" class="hide" controls>
+                <source src="./musics/giftsong.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát audio.
+            </audio>
+        </div>
+        <div id="giftPresent" class="gift-present animate__animated animate__zoomIn none">
+            <button id="giftPrev" class="btn-gift" type="button">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <div class="gift-present_wrapper">
+                <div id="gift-present_item1" class="gift-present_item_outer">
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/only1.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Chúc em sẽ có những giấc ngủ ngon hơn, không còn mệt mỏi ngủ gục bỏ quên anh nữaaa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/only2.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Chúc em không còn bực bội vì công việc nhiều, có thì chỉ anh được quyền làm em bực mình thoi he he.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/only3.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Mỗi lần cười là healing Mai Duy, cái gì quan trọng nhắc 3 lần nha.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/only4.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Nhìn tấm này cười ẻ, cho thấy anh cũm xàm giống em, em đừng lo mỗi em xàm nhó.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/only5.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Né, né, né. Né hết mấy chuyện làm em stress đi, tập trung vào thứ mình quan tâm hoi, anh là ví dụ số 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gift-present_item2" class="gift-present_item_outer">
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/us1.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Google nói mình là định mệnh.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/us2.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Em mệt anh sẽ là người chở em. Và ngược lại nè. Hình minh chứng!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/us3.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Em vui 1 là anh vui 10, em buồn 1 là anh buồn 100. Lưỡng long nhất thẻeeeee .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/us4.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Thông cảm, thấu hiểu là bí quyết bền lâu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-present_item">
+                        <div class="gift-present_flip">
+                            <div class="gift-present_img">
+                                <img src="./images/us5.jpg" alt="">
+                            </div>
+                            <div class="gift-present_back">
+                                <div class="gift-present_msg">
+                                    <p style="font-size: 30px;">🖤</p>
+                                    <p style="font-size: 18px;">Tấm này chụp hồi 2/6/2023. Anni 5/6/2023 mà nhỉ... Ngộ ha.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="giftNext" class="btn-gift" type="button">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="cakeOuter" class="animate__animated animate__zoomIn cake-outer none">
+            <div class="cake-pray_outer">
+                <div id="instructorPray1" class="instructor-pray1 hide">
+                    <img src="./images/instructor_pray.png" alt="">
+                </div>
+                <div class="cake-inner">
+                    <div class="cake-fire_outer">
+                        <div id="candleOne" class="cake-fire1 cake-fire none animate__animated animate__backInDown">
+                            <img src="./images/fire.png" alt="">
+                        </div>
+                        <div id="candleTwo" class="cake-fire2 cake-fire none animate__animated animate__backInDown">
+                            <img src="./images/fire.png" alt="">
+                        </div>
+                        <div id="candleThree" class="cake-fire3 cake-fire none animate__animated animate__backInDown">
+                            <img src="./images/fire.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cake-main">
+                        <img src="./images/cakenocandle2.png" alt="">
+                    </div>
+                </div>
+                <div id="instructorPray2" class="instructor-pray1 hide">
+                    <img src="./images/instructor_pray.png" alt="">
+                </div>
+            </div>
+            <div class="cake-btn_outer">
+                <button id="btnLight" class="btn-cake" disabled>LIGHT THE CANDLE</button>
+                <button id="btnBlow" class="btn-cake" disabled>BLOW</button>
+            </div>
+        </div>
+        <div id="maiduyOuter" class="animate__animated animate__zoomIn cake-outer none">
+            <div class="cake-pray_outer">
+                <div class="cake-inner">
+                    <div class="cake-main" style="text-align: center; color: #FFF;">
+                        <img src="./images/maiduy.png" alt="">
+                        <h1 style="margin-top: 20px;">❤️ ANH YÊU EM ❤️</h1>
+                        <h2>️🎊️ SINH NHẬT VUI VẺ NHA BABIII 🎉</h2>
+                    </div>
+                    <div class="maiduy-say">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cake-btn_outer">
+                <button id="btnPresent" class="btn-cake btn-present">OPEN PRESENT</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
